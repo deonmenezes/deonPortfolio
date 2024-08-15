@@ -133,19 +133,20 @@ export default function Home() {
     whileHover={{ scale: 1.02 }}
   >
     <div className="flex justify-between items-center mb-4">
-      <h4 className="text-3xl font-bold text-gold">Team Vision</h4>
-      <Link href="https://www.teamvision.com" passHref>
-        <motion.a 
-          className="inline-block px-4 py-2 bg-gold text-black font-semibold rounded-lg hover:bg-gray-300 transition duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </motion.a>
-      </Link>
-    </div>
+  <h4 className="text-3xl font-bold text-gold">Team Vision</h4>
+  <Link href="https://visionkjsce-2vh2nhudu-deonmenezes-projects.vercel.app/" passHref>
+    <motion.a 
+      className="inline-block px-4 py-2 bg-gold text-black font-semibold rounded-lg hover:bg-gray-300 transition duration-300"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Visit Website
+    </motion.a>
+  </Link>
+</div>
+
     <p className="text-xl text-gray-300 mb-6">
       Founder & CEO | Innovating in AR/VR Technologies
     </p>
@@ -302,27 +303,56 @@ export default function Home() {
 
       {/* Contact Section */}
       <motion.section 
-        id="contact" 
-        className="p-12 bg-black"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeIn}
-      >
-        <h3 className="text-4xl font-bold text-gold mb-8 text-center">
-          Contact
-        </h3>
-        <form className="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
-          {/* ... (Add form fields here) */}
-          <motion.button 
-            className="w-full py-3 bg-gold text-black font-semibold rounded-lg hover:bg-gray-300 transition duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Send
-          </motion.button>
-        </form>
-      </motion.section>
+  id="contact" 
+  className="p-12 bg-gradient-to-b from-black to-gray-900 text-white"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={fadeIn}
+>
+  <h3 className="text-4xl font-bold text-gold mb-8 text-center">
+    Get In Touch
+  </h3>
+  <p className="max-w-2xl mx-auto text-center text-lg mb-12 text-gray-400">
+    Have a question or want to work together? Feel free to reach out!
+  </p>
+  <form className="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg space-y-6">
+    <div className="flex flex-col">
+      <label htmlFor="name" className="text-sm font-semibold text-gray-300 mb-2">Your Name</label>
+      <input 
+        type="text" 
+        id="name" 
+        className="p-3 bg-gray-700 rounded-lg text-white focus:ring-2 focus:ring-gold outline-none"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div className="flex flex-col">
+      <label htmlFor="email" className="text-sm font-semibold text-gray-300 mb-2">Your Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        className="p-3 bg-gray-700 rounded-lg text-white focus:ring-2 focus:ring-gold outline-none"
+        placeholder="Enter your email"
+      />
+    </div>
+    <div className="flex flex-col">
+      <label htmlFor="message" className="text-sm font-semibold text-gray-300 mb-2">Your Message</label>
+      <textarea 
+        id="message" 
+        className="p-3 bg-gray-700 rounded-lg text-white focus:ring-2 focus:ring-gold outline-none h-32"
+        placeholder="Enter your message"
+      />
+    </div>
+    <motion.button 
+      className="w-full py-3 bg-gold text-black font-semibold rounded-lg hover:bg-gray-300 transition duration-300"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      Send Message
+    </motion.button>
+  </form>
+</motion.section>
+
 
       {/* Footer */}
       <footer className="p-6 bg-black text-center text-gray-300">
