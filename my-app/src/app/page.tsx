@@ -135,7 +135,7 @@ export default function Home() {
   >
     <div className="flex justify-between items-center mb-4">
   <h4 className="text-3xl font-bold text-gold">Team Vision</h4>
-  <Link href="https://visionkjsce-2vh2nhudu-deonmenezes-projects.vercel.app/" passHref>
+  <Link href="https://www.visionkjsce.tech/" passHref>
     <motion.a 
       className="inline-block px-4 py-2 bg-gold text-black font-semibold rounded-lg hover:bg-gray-300 transition duration-300"
       whileHover={{ scale: 1.05 }}
@@ -152,7 +152,7 @@ export default function Home() {
       Founder & CEO | Innovating in AR/VR Technologies
     </p>
     <p className="text-lg text-gray-300 mb-6">
-      Team Vision is a cutting-edge company I founded, specializing in software and hardware development for AR/VR technologies. Our mission is to push the boundaries of immersive experiences and create innovative solutions for various industries.
+      Team Vision is a cutting-edge company I and my teamates founded, specializing in software and hardware development for AR/VR technologies. Our mission is to push the boundaries of immersive experiences and create innovative solutions for various industries.
     </p>
     <ul className="list-disc list-inside text-gray-300 space-y-2">
       <li>Developing custom AR/VR applications for education, healthcare, and entertainment sectors</li>
@@ -267,11 +267,11 @@ export default function Home() {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <h3 className="text-4xl font-bold text-gold mb-8 text-center">
+        {/* <h3 className="text-4xl font-bold text-gold mb-8 text-center">
           Projects
-        </h3>
+        </h3> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {projects.map((project) => (
+          {/* {projects.map((project) => (
             <motion.div 
               key={project.id}
               className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
@@ -293,7 +293,7 @@ export default function Home() {
                 </Link>
               </div>
             </motion.div>
-          ))}
+          ))} */}
         </div>
       </motion.section>
 
